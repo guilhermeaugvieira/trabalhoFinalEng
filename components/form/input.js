@@ -14,6 +14,7 @@ export default function Input({ type, name, placeholder, onChange, value }) {
         placeholder={placeholder}
         onChange={handleChange}
         value={value}
+        data-testid={`input-${name}`}
       />
 
       <style jsx>{`

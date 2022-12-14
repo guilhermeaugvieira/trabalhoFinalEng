@@ -40,7 +40,6 @@ export default function SignUp() {
           password: password.trim(),
         },
       });
-
       router.push('/user/login');
     } catch (error) {
       setMsgError(getErrorMessage(error));
@@ -84,7 +83,7 @@ export default function SignUp() {
               value={confirm_password}
             />
 
-            <Button type="submit" title="Sign Up" />
+            <Button type="submit" title="Sign Up" testId={"button-signup"}/>
           </InputContainer>
         </form>
 

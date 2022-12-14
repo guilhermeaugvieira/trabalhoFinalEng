@@ -1,7 +1,9 @@
-export default function Button({ type, title }) {
+export default function Button({ type, title, testId }) {
   return (
     <>
-      <button type={type}>{title}</button>
+      <button type={type} data-testid={testId}>
+        {title}
+      </button>
 
       <style jsx>{`
         button {
