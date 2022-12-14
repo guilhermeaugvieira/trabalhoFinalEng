@@ -64,7 +64,7 @@ export default function Login() {
               value={password}
             />
 
-            <Button type="submit" title="Login" />
+            <Button type="submit" title="Login" testId={'button-login'} />
           </InputContainer>
         </form>
 
