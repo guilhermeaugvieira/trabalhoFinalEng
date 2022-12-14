@@ -12,7 +12,7 @@ export default function Profile() {
 
   const { data, loading, error } = useQuery(PRODUCTS_BY_IDS, {
     variables: {
-      id: cart.data.cart.products,
+      id: cart?.data?.cart?.products,
     },
   });
 

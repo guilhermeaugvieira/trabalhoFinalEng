@@ -18,10 +18,10 @@ export default function ProductSection({ id, name, rating, img_url, price }) {
     <article>
       <div className="top-buttons">
         <button className="add-wishlist" onClick={() => toggleWishlist(id)}>
-          {wishlist.data.wishlist.products.includes(id) && (
+          {wishlist?.data?.wishlist?.products?.includes(id) && (
             <FaHeart size={20} color="#D8D8D8" />
           )}
-          {!wishlist.data.wishlist.products.includes(id) && (
+          {!wishlist?.data?.wishlist?.products?.includes(id) && (
             <FaRegHeart size={20} color="#D8D8D8" />
           )}
         </button>
@@ -51,10 +51,10 @@ export default function ProductSection({ id, name, rating, img_url, price }) {
       <div className="price">
         <p className="price-value">${price}</p>
         <button className="add-cart" onClick={() => toggleCart(id)}>
-          {cart.data.cart.products.includes(id) && (
+          {cart?.data?.cart?.products?.includes(id) && (
             <FaCartArrowDown size={18} color="#D8D8D8" />
           )}
-          {!cart.data.cart.products.includes(id) && (
+          {!cart?.data?.cart?.products?.includes(id) && (
             <FaCartPlus size={18} color="#D8D8D8" />
           )}
         </button>

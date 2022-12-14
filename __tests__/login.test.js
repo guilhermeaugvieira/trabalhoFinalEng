@@ -34,7 +34,7 @@ const buildComponenet = () => {
   );
 };
 
-describe('SignUp', () => {
+describe('SignIn', () => {
   it('should render Login form correctly', () => {
     buildComponenet();
 

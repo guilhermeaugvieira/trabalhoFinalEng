@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "jest --watch",
+    "test": "jest",
     "knex:migrate": "knex migrate:latest",
     "knex:seed": "knex seed:run"
   },
